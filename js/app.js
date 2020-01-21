@@ -1,5 +1,5 @@
 /* REQUIRED STRING EXTENSIONS */
-String.prototype.reverse = function(){
+String.prototype.reverse = function() {
     return this.split("").reverse().join("");
 }
 String.prototype.palindrome = function(loose) {
@@ -18,8 +18,7 @@ $(document).ready(function() {
 
         var palindrome = value.palindrome(loose);
         palindrome ?
-            $(valueContainer).css('background-color', 'green').css('color', 'white')
-                :
+            $(valueContainer).css('background-color', 'green').css('color', 'white') :
             $(valueContainer).css('background-color', 'white').css('color', 'black');
     }
 
